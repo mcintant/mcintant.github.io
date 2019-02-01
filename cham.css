@@ -1,0 +1,66 @@
+body {
+    background-color: black;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 18px;
+}
+
+a {
+    color: white;
+}
+
+a:visited {
+    color: white;
+}
+
+.vid {
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.main {
+    color: white;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+.centerSection {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+.hidden {
+    display: none;
+}
+
+.centerText {
+    padding: 40px;
+}
+
+.tracklist {
+    font-size: 16px;
+}
+
+.bottomSection {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    font-size: 12px;
+}
+
+.bottomSection a {
+    padding: 0px 20px;
+    text-decoration: none;
+    color: #4d4b53;
+}
