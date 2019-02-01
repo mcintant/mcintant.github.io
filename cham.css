@@ -21,20 +21,14 @@ a:visited {
 
 .main {
     color: white;
-    width: 100vw;
-    height: 100vh;
-    position: relative;
 }
 
-.centerSection {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
+img {
+	padding-top: 40px;
+    width: 300px;
+    height: 300px;
 }
+
 
 .hidden {
     display: none;
@@ -42,6 +36,7 @@ a:visited {
 
 .centerText {
     padding: 40px;
+    text-align: left;
 }
 
 .tracklist {
@@ -49,18 +44,52 @@ a:visited {
 }
 
 .bottomSection {
-    position: absolute;
-    bottom: 20px;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
     font-size: 12px;
+}
+
+.center {
+    text-align: center;
 }
 
 .bottomSection a {
     padding: 0px 20px;
     text-decoration: none;
     color: #4d4b53;
+}
+
+@media only screen and (min-device-width: 480px) {
+    img {
+        width: 480px;
+        height: 480px;
+    }
+
+    .center {
+        text-align: left;
+    }
+
+    .centerSection {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+    }
+
+    .bottomSection {
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+    }
+
+    .main {
+        width: 100vw;
+        height: 100vh;
+        position: relative;
+    }
 }
