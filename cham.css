@@ -59,8 +59,8 @@ body {
 }
 
 .bottomSection {
-	font-weight: bold;
-	margin-bottom: 60px;
+    font-weight: bold;
+    margin-bottom: 60px;
 }
 
 .bottomSection a {
@@ -118,6 +118,12 @@ body {
     font-size: 24px;
 }
 
+
+@media only screen and (max-device-width: 480px) {
+    .leftColumn {
+        font-size: 36px;
+    }
+}
 
 @media only screen and (min-device-width: 480px) {
     .bottomSection {
