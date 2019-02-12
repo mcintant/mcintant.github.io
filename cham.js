@@ -11,15 +11,18 @@ $(document).ready(function() {
         $("video").prop('muted', false);
     }
     // hideVid();
- 	$('.vid').on('click', function() {
+    $('.vid').on('click', function() {
         $("video").prop('muted', false);
     });
     // $('.vid').on('ended', function() {
     //     hideVid();
     // });
- 	setTimeout(function() { 
-       hideVid();
-    }, 6000);
+    $(".vid").on('play', function() {
+        setTimeout(function() {
+            hideVid();
+        }, 6000);
+    });
+
 });
 
 $(document).mouseup(function(e) {
