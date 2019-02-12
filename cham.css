@@ -13,7 +13,7 @@
 body {
     background-color: white;
     font-family: Nimbus, Helvetica Neue, Helvetica, Arial, sans-serif;
-    font-size: 24px;
+    font-size: 36px;
     transition: background-color .3s linear;
 }
 
@@ -21,7 +21,6 @@ body {
     background-color: black;
 
 }
-
 
 .vid {
     left: 50%;
@@ -75,13 +74,13 @@ body {
 }
 
 .blackred {
-	padding: 0px 5px;
+    padding: 0px 5px;
     margin-bottom: 30px;
     padding: 6px 8px;
     background-color: black;
     text-align: center;
     font-weight: bold;
-  	box-shadow: 5px 5px red;
+    box-shadow: 5px 5px red;
 }
 
 .blackred a {
@@ -93,7 +92,7 @@ body {
 }
 
 .logo {
- /*   width: fit-content;
+    /*   width: fit-content;
  	text-shadow: 3px 3px red;
  	background-color: black;
  	color: white;
@@ -105,16 +104,25 @@ body {
 }
 
 .logoimg {
-	width: 400px;
+    width: 80%;
 }
 
 @media only screen and (min-device-width: 480px) {
-	.leftColumn {
-		font-size: 12px;
-		width: 18%;
-		margin-left: 30px;
-	    text-align: right;
+	.blackred {
+
 	}
+
+    .logoimg {
+        width: 400px;
+    }
+
+    .leftColumn {
+        font-size: 12px;
+        width: 18%;
+        margin-left: 30px;
+        text-align: right;
+    }
+
     body {
         font-size: 18px;
     }
@@ -136,7 +144,7 @@ body {
         display: flex;
         flex-flow: row nowrap;
         justify-content: space-between;
-        width: 50%;
+        width: 900px;
     }
 
     .bottomSection {
@@ -157,6 +165,6 @@ body {
     }
 
     .logo {
-    	margin: 40px;
+        margin: 40px;
     }
 }

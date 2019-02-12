@@ -8,9 +8,12 @@ function hideVid() {
 $(document).ready(function() {
     var width = $("body").width();
     if (width > 1030) {
-        $("video").prop('muted', false)
+        $("video").prop('muted', false);
     }
     // hideVid();
+ 	$('.vid').on('click', function() {
+        $("video").prop('muted', false);
+    });
     $('.vid').on('ended', function() {
         hideVid();
     });
