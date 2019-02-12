@@ -123,6 +123,10 @@ body {
     .leftColumn {
         font-size: 36px;
     }
+
+    .tracklist {
+    	margin-bottom: 60px;
+    }
 }
 
 @media only screen and (min-device-width: 480px) {
