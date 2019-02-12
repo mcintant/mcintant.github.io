@@ -4,11 +4,15 @@ function hideVid() {
     $('.vid').hide();
 }
 
+
 $(document).ready(function() {
-    console.log('yeeee');
+    var width = $("body").width();
+    if (width > 1030) {
+        $("video").prop('muted', false)
+    }
     // hideVid();
     $('.vid').on('ended', function() {
-    	hideVid();
+        hideVid();
     });
 });
 
