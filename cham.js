@@ -1,10 +1,12 @@
 function hideVid() {
     $('.hidden').fadeIn();
+    $('.dark').removeClass('dark');
     $('.vid').hide();
 }
 
 $(document).ready(function() {
     console.log('yeeee');
+    // hideVid();
     $('.vid').on('ended', function() {
     	hideVid();
     });

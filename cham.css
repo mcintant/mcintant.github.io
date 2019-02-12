@@ -1,16 +1,27 @@
+@font-face {
+    font-family: Nimbus;
+    src: url("NimbusSanL-Reg.otf") format("opentype");
+}
+
+@font-face {
+    font-family: Nimbus;
+    font-weight: bold;
+    src: url("NimbusSanL-Bol.otf") format("opentype");
+}
+
+
 body {
-    background-color: black;
-    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    background-color: white;
+    font-family: Nimbus, Helvetica Neue, Helvetica, Arial, sans-serif;
     font-size: 24px;
+    transition: background-color .3s linear;
 }
 
-a {
-    color: white;
+.dark {
+    background-color: black;
+
 }
 
-a:visited {
-    color: white;
-}
 
 .vid {
     left: 50%;
@@ -20,11 +31,10 @@ a:visited {
 }
 
 .main {
-    color: white;
+    color: black;
 }
 
-img {
-	padding-top: 40px;
+.cover {
     width: 80%;
     height: 80%;
 }
@@ -35,35 +45,83 @@ img {
 }
 
 .centerText {
-    padding: 40px;
     text-align: left;
+    margin-right: 50px;
 }
 
 .tracklist {
-    font-size: 16px;
+    font-size: 14px;
+    font-weight: bold;
 }
 
-.bottomSection {
-    font-size: 12px;
-}
 
 .center {
     text-align: center;
 }
 
+
+.bottomSection {
+    font-size: 16px;
+    font-weight: bold;
+}
+
 .bottomSection a {
+    color: #6DEBE9;
     padding: 0px 20px;
-    text-decoration: none;
-    color: #4d4b53;
+}
+
+.bottomSection a:visited {
+    color: #6DEBE9;
+}
+
+.blackred {
+	padding: 0px 5px;
+    margin-bottom: 30px;
+    padding: 6px 8px;
+    background-color: black;
+    text-align: center;
+    font-weight: bold;
+  	box-shadow: 5px 5px red;
+}
+
+.blackred a {
+    color: white
+}
+
+.blackred a:visited {
+    color: white;
+}
+
+.logo {
+ /*   width: fit-content;
+ 	text-shadow: 3px 3px red;
+ 	background-color: black;
+ 	color: white;
+ 	font-weight: bold;
+ 	font-size: 36px;
+ 	padding: 8px 4px 4px 4px;
+ 	transform: scaleX(1.4);
+    transform-origin: 0 0;*/
+}
+
+.logoimg {
+	width: 400px;
 }
 
 @media only screen and (min-device-width: 480px) {
-	body {
-		font-size: 18px;
+	.leftColumn {
+		font-size: 12px;
+		width: 18%;
+		margin-left: 30px;
+	    text-align: right;
 	}
-    img {
-        width: 480px;
-        height: 480px;
+    body {
+        font-size: 18px;
+    }
+
+    .cover {
+        width: 400px;
+        height: 400px;
     }
 
     .center {
@@ -78,6 +136,7 @@ img {
         display: flex;
         flex-flow: row nowrap;
         justify-content: space-between;
+        width: 50%;
     }
 
     .bottomSection {
@@ -88,11 +147,16 @@ img {
         display: flex;
         flex-flow: row nowrap;
         justify-content: space-between;
+        width: 700px;
     }
 
     .main {
         width: 100vw;
-        height: 100vh;
+        height: 90vh;
         position: relative;
+    }
+
+    .logo {
+    	margin: 40px;
     }
 }
