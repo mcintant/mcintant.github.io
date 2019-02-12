@@ -45,7 +45,8 @@ body {
 
 .centerText {
     text-align: left;
-    margin-right: 50px;
+    margin-left: 80px;
+    margin-right: 80px;
 }
 
 .tracklist {
@@ -57,10 +58,9 @@ body {
     text-align: center;
 }
 
-
 .bottomSection {
-    font-size: 16px;
-    font-weight: bold;
+	font-weight: bold;
+	margin-bottom: 60px;
 }
 
 .bottomSection a {
@@ -73,7 +73,6 @@ body {
 }
 
 .blackred {
-    padding: 0px 5px;
     margin-bottom: 30px;
     padding: 6px 8px;
     background-color: black;
@@ -107,17 +106,27 @@ body {
 }
 
 .logo {
-	margin: 20px auto;
+    margin: 30px auto;
+    text-align: center;
 }
 
 .section {
-	margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
+.leftColumn {
+    font-size: 20px;
+}
+
+
 @media only screen and (min-device-width: 480px) {
-	.tracklist {
-		font-size: 14px;
-	}
+    .bottomSection {
+        font-size: 16px;
+    }
+
+    .tracklist {
+        font-size: 14px;
+    }
 
     .logoimg {
         width: 400px;
@@ -141,6 +150,11 @@ body {
 
     .center {
         text-align: left;
+    }
+
+    .centerText {
+        margin-right: 50px;
+        margin-left: 0px;
     }
 
     .centerSection {
@@ -173,5 +187,6 @@ body {
 
     .logo {
         margin: 40px;
+        text-align: left;
     }
 }

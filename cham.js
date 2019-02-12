@@ -14,9 +14,12 @@ $(document).ready(function() {
  	$('.vid').on('click', function() {
         $("video").prop('muted', false);
     });
-    $('.vid').on('ended', function() {
-        hideVid();
-    });
+    // $('.vid').on('ended', function() {
+    //     hideVid();
+    // });
+ 	setTimeout(function() { 
+       hideVid();
+    }, 6000);
 });
 
 $(document).mouseup(function(e) {
