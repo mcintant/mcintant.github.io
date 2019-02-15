@@ -131,6 +131,8 @@ body {
     .logo {
     	font-size: 80px;
     	transform: scaleX(1.2) translateX(-3%);
+    	padding: 28px 20px 20px 20px;
+    	text-shadow: 8px 8px red;
     }
 }
 
