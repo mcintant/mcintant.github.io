@@ -22,6 +22,7 @@ $(document).ready(function() {
             hideVid();
         }, 6000);
     });
+    hideVid();
 
 });
 
@@ -32,4 +33,5 @@ $(document).mouseup(function(e) {
     if (!container.is(e.target) && container.has(e.target).length === 0) {
         hideVid();
     }
+
 });

@@ -9,6 +9,7 @@
     src: url("NimbusSanL-Bol.otf") format("opentype");
 }
 
+
 @font-face {
     font-family: Ouro;
     src: url("Ouroboros.otf") format("opentype");
@@ -21,19 +22,10 @@
 
 
 body {
-    /*background-color: white;*/
-    background-image: url("guitarpic.jpeg");
-    font-family: Nimbus, Helvetica Neue, Helvetica, Arial, sans-serif;
+    background-color: white;
+    font-family: Ouro, Helvetica Neue, Helvetica, Arial, sans-serif;
     font-size: 36px;
     transition: background-color .3s linear;
-}
-
-.sleepovers {
-    font-family: Ouro, Helvetica Neue, Helvetica, Arial, sans-serif;
-}
-
-.bouji {
-    font-family: Trick, Helvetica Neue, Helvetica, Arial, sans-serif;
 }
 
 .dark {
@@ -83,14 +75,14 @@ body {
 }
 
 .bottomSection a {
-    color: #BFB15E;
+    color: #6DEBE9;
     padding: 0px 20px;
 }
 
 .bottomSection a:visited {
-    color: #BFB15E;
+    color: #6DEBE9;
 }
-/*191 177 94*/
+
 .blackred {
     margin-bottom: 30px;
     padding: 6px 8px;
@@ -111,7 +103,7 @@ body {
 .logo {
    width: fit-content;
  	text-shadow: 3px 3px red;
- 	/*background-color: black;*/
+ 	background-color: black;
  	color: white;
  	font-weight: bold;
  	font-size: 36px;
@@ -178,7 +170,7 @@ body {
     }
 
     body {
-        font-size: 24px;
+        font-size: 18px;
     }
 
     .cover {
@@ -203,7 +195,7 @@ body {
         display: flex;
         flex-flow: row nowrap;
         justify-content: space-between;
-        /*width: 850px;*/
+        width: 850px;
     }
 
     .bottomSection {
